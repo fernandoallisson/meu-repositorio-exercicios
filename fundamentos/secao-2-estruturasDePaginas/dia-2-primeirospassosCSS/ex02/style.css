@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+p{
+    font-weight: 600px;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 65px;
+
+}
+
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
+
+#brown{
+    background-color: brown;
+}
