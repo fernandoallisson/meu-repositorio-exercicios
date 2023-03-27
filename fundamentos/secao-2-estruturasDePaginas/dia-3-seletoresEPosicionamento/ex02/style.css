@@ -1,0 +1,64 @@
+div {
+    width: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    border: 1px solid transparent; /* borda inicialmente transparente */
+    transition: border-color 0.3s; /* transição de 0.3s na cor da borda */
+    font-size: 100px;
+  }
+  
+  div:hover {
+    border-color: black; /* Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda.*/
+  }
+  
+  div:nth-child(1) {
+    background-color: red;
+  }
+  
+  div:nth-child(2) {
+    background-color: blue;
+  }
+  
+  div:nth-child(3) {
+    background-color: yellow;
+    flex-grow: 2; /* terceira div com o dobro da largura */
+  }
+  
+  div:nth-child(4) {
+    background-color: darkgray;
+  }
+  
+  div:nth-child(5) {
+    background-color: lightgray;
+  }
+  
+  h3 {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h3:nth-of-type(odd) {
+    font-style: italic; /* texto em itálico nas tags ímpares */
+  }
+  
+  h3.primaria {
+    background-color: red;
+  }
+  
+  h3.secundaria {
+    background-color: blue;
+  }
+  
+  h3.complementar {
+    background-color: yellow;
+  }
+  
+  h3.escura {
+    background-color: darkgray;
+  }
+  
+  h3.clara {
+    background-color: lightgray;
+  }
+  
