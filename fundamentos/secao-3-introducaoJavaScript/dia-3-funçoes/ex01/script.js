@@ -8,5 +8,5 @@ function addClientName (name){
     }
 }
 
-console.log(addClientName(1));
+console.log(addClientName("fernando"));
 console.log(clientesTrybeBank);
