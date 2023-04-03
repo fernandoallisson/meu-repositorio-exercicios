@@ -14,6 +14,7 @@ let info = {
 //     recorrente: 'Sim'
 //   }
 
+
 info.recorrente = "sim"; 
 
 console.log(info);
