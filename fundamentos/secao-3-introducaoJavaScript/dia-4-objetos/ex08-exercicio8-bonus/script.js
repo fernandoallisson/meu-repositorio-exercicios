@@ -40,11 +40,21 @@ function valuesObject (object) {
 // Crie um objeto de nome allLessons, que deve agrupar todas as aulas por meio do Object.assign. Cada chave desse novo objeto será uma aula, portanto essas chaves serão nomeadas lesson1, lesson2 e lesson3. Ao executar o comando console.log(allLessons), a saída deverá ser a seguinte:
 
 function allLessons (object){
-    
     return Object.assign({}, {
         lesson1: lesson1, 
         lesson2: lesson2, 
         lesson3: lesson3,
     });
 }
-console.log(allLessons())
+
+// Com base no objeto elaborado no tópico anterior, crie uma função que retorne o número total de estudantes em todas as aulas.
+
+const totalEstudantes = (object) => {
+    let total = 0;
+    let key = Object.keys(object)
+    for (let numero in key) {
+        total += object[key[numero]].numeroEstudantes;
+    }
+    return total
+}
+
