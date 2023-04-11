@@ -39,7 +39,12 @@ function valuesObject (object) {
 
 // Crie um objeto de nome allLessons, que deve agrupar todas as aulas por meio do Object.assign. Cada chave desse novo objeto será uma aula, portanto essas chaves serão nomeadas lesson1, lesson2 e lesson3. Ao executar o comando console.log(allLessons), a saída deverá ser a seguinte:
 
-function allLessons (){
-    return Object.assign({}, lesson1, lesson2, lesson3)
+function allLessons (object){
+    
+    return Object.assign({}, {
+        lesson1: lesson1, 
+        lesson2: lesson2, 
+        lesson3: lesson3,
+    });
 }
 console.log(allLessons())
