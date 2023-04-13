@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        const getBody = document.querySelector('body');
+        const title = document.createElement ('h1'); 
+        title.innerText = 'TrybeTrip - Agência de Viagens';
+        const main = document.createElement ('main');
+        getBody.appendChild (main)
+        const p = document.createElement ('p');
+        const h3 = document.createElement ('h3');
+        
+       
+        // Cria um elemento section com a classe 'center-content'
+        const centerSection = document.createElement('section');
+        centerSection.classList.add('center-content');
+        const centerContentP = document.createElement('p');
+        centerContent.appendChild('centerContentP')
+
+        // Cria um elemento section com a classe 'left-content'
+        const leftSection = document.createElement('section');
+        leftSection.classList.add('left-content');
+
+        // Cria um elemento section com a classe 'right-content'
+        const rightSection = document.createElement('section');
+        rightSection.classList.add('right-content');
+
+        // Adiciona cada elemento ao elemento main
+        const mainC = document.querySelector('main');
+        mainC.appendChild(centerSection);
+        mainC.appendChild(leftSection);
+        mainC.appendChild(rightSection);
+
+        
+
+        console.log(getBody)
+    </script>
+  </body>
+</html>
